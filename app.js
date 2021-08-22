@@ -51,9 +51,13 @@ document.getElementById('submit-btn').addEventListener('click', function (e) {
             e.target.classList.add('gray')
             e.target.disabled = true;
         }
+        document.getElementById('clue').value = '';
+        document.getElementById('pin-input').value = '';
     } else {
         tryCount = 3;
         document.getElementById('tries').innerText = tryCount;
+        document.getElementById('clue').value = '';
+        document.getElementById('pin-input').value = '';
     }
 })
 
