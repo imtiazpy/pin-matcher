@@ -52,7 +52,8 @@ document.getElementById('submit-btn').addEventListener('click', function (e) {
             e.target.disabled = true;
         }
     } else {
-        document.getElementById('tries').innerText = 3;
+        tryCount = 3;
+        document.getElementById('tries').innerText = tryCount;
     }
 
 
