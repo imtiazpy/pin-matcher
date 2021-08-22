@@ -55,8 +55,6 @@ document.getElementById('submit-btn').addEventListener('click', function (e) {
         tryCount = 3;
         document.getElementById('tries').innerText = tryCount;
     }
-
-
 })
 
 
@@ -96,6 +94,10 @@ function verifyPin(clue, pinInput) {
         secretPin = 36
     } else {
         secretPin = 1971
+    }
+
+    if (isNaN(submittedPin)) {
+        return
     }
 
     if (secretPin == submittedPin) {
