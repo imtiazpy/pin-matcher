@@ -25,6 +25,8 @@ function verifyPin(pin, pinInput) {
 
 document.getElementById('generate-btn').addEventListener('click', function () {
     document.getElementById('pin').value = generatePin()
+    document.getElementById('wrong').style.display = 'none';
+    document.getElementById('correct').style.display = 'none';
 })
 
 document.getElementById('key-pad').addEventListener('click', function (e) {
